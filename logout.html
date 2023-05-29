@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- Obs: Sticky and top-0 both both must be used to get a sticky navbar-->
+    <nav class="container sticky top-0 p-6 mx-auto bg-brightRedSuperLight">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <!-- and making it link to the home page -->
+            <a href="index.html" aria-label="logo" class="p-2">
+                <img class="w-12 " src="./img/logo_auction.jpg" alt="">
+            </a>
+            <!-- Menu Items -->
+            <div class="hidden space-x-6 md:flex">
+                <!-- <a href="index.html" class="hover:text-brightRed">Home</a> -->
+                <a href="index.html" class="hover:text-brightRed">Home</a>
+                <a href="listings.html" class="hover:text-brightRed">Listings</a>
+                <a href="manageListings.html" class="hover:text-brightRed">Manage listings</a>
+                <a href="profile.html" class="hover:text-brightRed">Profile</a>
+                <a href="index.html" class="hover:text-brightRed">Logout</a>
+            </div>
+            <!-- Button for register -->
+            <a href="register.html"
+                class="hidden p-3 px-6 pt-2 text-white rounded-full md:block bg-brightRed baseline hover:bg-brightRedLight">
+                Register
+            </a>
+            <!-- Button for login -->
+            <a href="login.html"
+                class="hidden p-3 px-6 pt-2 text-white rounded-full md:block bg-brightRed baseline hover:bg-brightRedLight">
+                Login
+            </a>
+
+            <button class="hidden p-3 px-6 pt-2 text-white bg-blue-600 rounded-full md:block baseline">
+                You are still logged in
+            </button>
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" aria-label="Menu" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+
+            </button>
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="index.html" class="hover:text-brightRed">Home</a>
+                    <a href="listings.html" class="hover:text-brightRed">Listings</a>
+                    <a href="manageListings.html" class="hover:text-brightRed">Manage listing</a>
+                    <a href="profile.html" class="hover:text-brightRed">Profile</a>
+                    <a href="/register.html" class="hover:text-brightRed">Register</a>
+                    <a href="/login.html" class="hover:text-brightRed">Login</a>
+                    <a href="logout.html" class="hover:text-brightRed">Logout</a>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <div class="flex flex-col items-center py-12">
+            <h1 class="w-3/4 space-y-12 text-2xl font-bold text-center md:text-5xl">
+                Do you want to log out?
+            </h1>
+
+        </div>
+
+
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0">
+            <!-- Left item -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <p class="max-w-sm py-10 text-left text-darkGreyishBlue">
+                    If you wish to log out, you must press the "Logout" button below.
+                    <br><br>
+                    You will then return to the welcome page.
+                    <br><br>
+                    When you eventually log in again, your credits will be reset to 1000. And all the bids you have made
+                    in this session
+                    will be cancelled.
+                    <br><br>
+                    In case you click the button "Yes, I want to log out" just below, we would like to take this
+                    opportunity to thank you for visiting this auction site and welcome you back on a later occasion.
+                </p>
+                <!-- Button -->
+                <button id="logout"
+                    class="flex justify-center p-3 px-6 pt-2 text-center text-white rounded-full bg-brightRed baseline hover:bg-brightRedLight">
+                    Yes, I want to logout
+                </button>
+
+
+
+            </div>
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="./img/auction-04.png" alt="auction picture">
+            </div>
+            <div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-brightRedSuperLight">
+        <!-- Flex Container -->
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social Links container -->
+            <div
+                class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+
+                <div class="mx-auto my-6 text-center text-black md:hidden">
+                    Copyright &copy; 2023, All Rights Reserved
+                </div>
+                <!-- Logo -->
+                <div>
+                    <a href="index.html" aria-label="logo" class="p-2">
+                        <img class="h-8" src="./img/logo_auction.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Social Links Container -->
+                <div class="flex justify-center space-x-4">
+                    <!-- Link 1 -->
+                    <a href="#">
+                        <img src="./img/icon-facebook.jpg" alt="icon-facebook" class="h-8">
+                    </a>
+                    <!-- Link 2 -->
+                    <a href="#">
+                        <img src="./img/icon-youtube.jpg" alt="icon-youtube" class="h-8">
+                    </a>
+                    <!-- Link 3 -->
+                    <a href="#">
+                        <img src="./img/icon-twitter.jpg" alt="icon-twitter" class="h-8">
+                    </a>
+                    <!-- Link 4 -->
+                    <a href="#">
+                        <img src="./img/icon-pinterest.jpg" alt="icon-pinterest" class="h-8">
+                    </a>
+                    <!-- Link 5 -->
+                    <a href="#">
+                        <img src="./img/icon-instagram.jpg" alt="icon-instagram" class="h-8">
+                    </a>
+                </div>
+            </div>
+            <!-- List Container -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-black">
+                    <a href="index.html" class="hover:text-brightRed">Home</a>
+                    <a href="listings.html" class="hover:text-brightRed">Listings</a>
+                    <a href="manageListings.html" class="hover:text-brightRed">Manage listings</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-black">
+                    <a href="profile.html" class="hover:text-brightRed">Profile</a>
+                    <a href="index.html" class="hover:text-brightRed">Logout</a>
+                </div>
+            </div>
+
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex mb-5 space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Search">
+                    </div>
+                </form>
+                <!-- Copyright -->
+                <div class="hidden text-black md:block">
+                    Copyright &copy; 2023, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>
