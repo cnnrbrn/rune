@@ -1,9 +1,12 @@
-export default function displayMessage(type, message, target) {
-	const container = document.querySelector(target);
+export function displayMessage(type, message, target) {
+  let container = target;
 
-	container.innerHTML = `
-    <div class="alert alert-${type}">
-      ${message}
-    </div>
-  `;
+  if (typeof target === "string") {
+    container = document.querySelector(target);
+  }
+  // const container = document.querySelector(target);
+
+  console.log(container);
+
+  container.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
 }
